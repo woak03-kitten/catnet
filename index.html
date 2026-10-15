@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>~</title>
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .top-left-time {
+      position: absolute;
+      top: 25px;
+      left: 30px;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .terminal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 700px;
+      padding: 0 20px;
+    }
+
+    .cube {
+      width: 50px;
+      height: 50px;
+      background: #ccc;
+      margin-bottom: 20px;
+      animation: glitch 0.2s infinite;
+    }
+
+    @keyframes glitch {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(-2px, 1px); }
+      50% { transform: translate(2px, -1px); }
+      75% { transform: translate(-1px, -2px); }
+      100% { transform: translate(1px, 2px); }
+    }
+
+    .terminal p {
+      margin: 6px 0;
+    }
+
+    .secret {
+      color: #040404;
+      margin-top: 15px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-left-time">14:32</div>
+
+  <div class="terminal">
+    <div class="cube"></div>
+    <p>HASH_TARGET: 827710317d660c63a9c50727d5516ded</p>
+    <p>STATUS: ENCRYPTED_WITH_MULTILAYER</p>
+
+    <div class="secret">"Le signal a été découpé et crypté par N|V'15 en traversant les décennies. Pour retrouver ma fréquence d'origine, vous devez fusionner les 3 fragments."</div>
+  </div>
+
+</body>
+</html>

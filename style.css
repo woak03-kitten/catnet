@@ -1,0 +1,26 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.terminal {
+  border-left: 2px solid #333;
+  padding-left: 15px;
+}
+
+.cube {
+  width: 50px;
+  height: 50px;
+  background: #ccc;
+  margin-bottom: 20px;
+}
+
+.secret {
+  color: #040404;
+}
